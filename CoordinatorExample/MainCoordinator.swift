@@ -20,15 +20,17 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
         navigationController.delegate = self
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
 
     }
     
-    func buySubscription() {
+    func buySubscription(to productType: Int) {
         let child = BuyCoordinator(navigationController: navigationController)
         childCoordinators.append(child)
-        child.start()
+        child.start(productType: productType)
         child.parentCoordinator = self
     }
+    
 
     func createAccount() {
         let vc = CreateAccountViewController.instantiate()

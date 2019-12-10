@@ -9,6 +9,9 @@
 import UIKit
 
 class BuyCoordinator: Coordinator {
+    func start() {
+    }
+    
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     weak var parentCoordinator: MainCoordinator?
@@ -17,8 +20,9 @@ class BuyCoordinator: Coordinator {
         self.navigationController = navigationController
     }
 
-    func start() {
+    func start(productType: Int) {
         let vc = BuyViewController.instantiate()
+        vc.selectedProduct = productType
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

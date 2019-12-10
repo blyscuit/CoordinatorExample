@@ -1,5 +1,5 @@
 //
-//  BuyViewController.swift
+//  MainTabBarController.swift
 //  CoordinatorExample
 //
 //  Created by Pisit W on 10/12/2562 BE.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class BuyViewController: UIViewController, Storyboarded {
-    weak var coordinator: BuyCoordinator?
-    var selectedProduct = 0
+class MainTabBarController: UITabBarController {
+    let mainCoordinator = MainCoordinator(navigationController: UINavigationController())
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        mainCoordinator.start()
+        viewControllers = [mainCoordinator.navigationController]
         // Do any additional setup after loading the view.
     }
     
@@ -28,8 +29,5 @@ class BuyViewController: UIViewController, Storyboarded {
         // Pass the selected object to the new view controller.
     }
     */
-//    override func viewDidDisappear(_ animated: Bool) {
-//        super.viewDidDisappear(animated)
-//        coordinator?.didFinishBuying()
-//    }
+
 }

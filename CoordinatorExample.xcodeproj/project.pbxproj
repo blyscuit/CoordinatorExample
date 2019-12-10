@@ -21,6 +21,7 @@
 		68804246239F9AE2008CFA40 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68804245239F9AE2008CFA40 /* BuyViewController.swift */; };
 		68E16DCC239F9B8C00348BD5 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E16DCB239F9B8C00348BD5 /* CreateAccountViewController.swift */; };
 		68E16DCE239F9D1D00348BD5 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E16DCD239F9D1D00348BD5 /* BuyCoordinator.swift */; };
+		68E16DD0239FA70800348BD5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E16DCF239FA70800348BD5 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		68804245239F9AE2008CFA40 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		68E16DCB239F9B8C00348BD5 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		68E16DCD239F9D1D00348BD5 /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
+		68E16DCF239FA70800348BD5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				68804211239F9555008CFA40 /* SceneDelegate.swift */,
 				6880423F239F964F008CFA40 /* Coordinator.swift */,
 				68804243239F97A2008CFA40 /* MainCoordinator.swift */,
+				68E16DCF239FA70800348BD5 /* MainTabBarController.swift */,
 				68804241239F9680008CFA40 /* Storyboarded.swift */,
 				68804213239F9555008CFA40 /* ViewController.swift */,
 				68804245239F9AE2008CFA40 /* BuyViewController.swift */,
@@ -279,6 +282,7 @@
 			files = (
 				68E16DCE239F9D1D00348BD5 /* BuyCoordinator.swift in Sources */,
 				68804240239F964F008CFA40 /* Coordinator.swift in Sources */,
+				68E16DD0239FA70800348BD5 /* MainTabBarController.swift in Sources */,
 				68804244239F97A2008CFA40 /* MainCoordinator.swift in Sources */,
 				68804214239F9555008CFA40 /* ViewController.swift in Sources */,
 				68804242239F9680008CFA40 /* Storyboarded.swift in Sources */,
