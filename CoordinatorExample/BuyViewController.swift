@@ -27,8 +27,8 @@ class BuyViewController: UIViewController, Storyboarded {
         // Pass the selected object to the new view controller.
     }
     */
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        coordinator?.didFinishBuying()
-    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        coordinator?.didFinishBuying()
+//    }
 }
